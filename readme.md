@@ -1,8 +1,11 @@
 [**中文说明**](./README.md) | [**English**](./README_EN.md)
 
 <p align="center">
+    <img src="./pics/banner.svg" width="500"/>
+</p>
+<p align="center">
     <a href="https://github.com/shendezhou/Chinese-PreTrained-XLNet/blob/master/LICENSE">
-        <img src="./pics/banner.svg" width="500"/>
+        <img alt="LICENCE" src="" />
     </a>
 </p>
 
@@ -58,15 +61,6 @@
 中国大陆境内建议使用百度云下载点，境外用户建议使用谷歌下载点，`XLNet-tiny`模型文件大小约**343M**。 以TensorFlow版`XLNet-tiny, Chinese`为例，下载完毕后对zip文件进行解压得到：
 
 ```
-chinese_xlnet_tiny_L-6_H-768_A-12.zip
-    |- pytorch_model.bin     # 模型权重
-    |- config.json           # 模型参数
-    |- training_args.bin     # 模型训练信息
-    |- spiece.vocab          # 分词词表
-    |- spiece.model          # 分词模型
-```
-
-```
 tf_chinese_xlnet_tiny_L-6_H-768_A-12.zip
     |- checkpoint                                           # 存盘点信息
     |- xlnet_tiny_chinese.ckpt.data-00000-of-00001          # 模型权重
@@ -76,6 +70,8 @@ tf_chinese_xlnet_tiny_L-6_H-768_A-12.zip
     |- spiece.model          # 分词模型
 ```
 
+TensorFlow2版本为：
+
 ```
 tf2_chinese_xlnet_tiny_L-6_H-768_A-12.zip
     |- tf_model.h5           # 模型权重
@@ -83,6 +79,18 @@ tf2_chinese_xlnet_tiny_L-6_H-768_A-12.zip
     |- spiece.vocab          # 分词词表
     |- spiece.model          # 分词模型
 ```
+
+Pytorch版本为：
+
+```
+chinese_xlnet_tiny_L-6_H-768_A-12.zip
+    |- pytorch_model.bin     # 模型权重
+    |- config.json           # 模型参数
+    |- training_args.bin     # 模型训练信息
+    |- spiece.vocab          # 分词词表
+    |- spiece.model          # 分词模型
+```
+
 
 ### 快速加载
 依托于[Huggingface-Transformers 3.1.0](https://github.com/huggingface/transformers)，可轻松调用以上模型。
@@ -96,7 +104,7 @@ model = AutoModel.from_pretrained("MODEL_NAME")
 | - | - |
 | XLNet-tiny-Chinese | /chinese-xlnet-tiny<sup>[1]</sup>|
 
-> [1] 待上传
+> [1] 待上传,暂时需要手动下载。
 
 
 
@@ -118,7 +126,7 @@ model = AutoModel.from_pretrained("MODEL_NAME")
 | **XLNet-tiny** | 0.9880 / 0.9863 |  **0.9679**  /    **0.96184** |
 | **XLNet-base**<sup>[2]</sup> | 0.9988 /	0.99853 |	**0.9825** /	**0.97877**|
 
-> [1] BERT-wwm-ext：是崔一鸣等人提出的[BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)。
+> [1] BERT-wwm-ext：是崔一鸣等人提出的[BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)。  
 > [2] XLNet-base：是崔一鸣（哈工大讯飞联合实验室）等人提出的[XLNet](https://github.com/ymcui/Chinese-XLNet)。
 
 
@@ -245,9 +253,9 @@ https://arxiv.org/abs/
 
 
 ## 关注我们
-欢迎关注微信公众号。
+欢迎关注知乎专栏号。
 
-![qrcode.png]()
+[学习兴趣小组](https://www.zhihu.com/column/thuil)
 
 
 ## 问题反馈 & 贡献
