@@ -1,4 +1,4 @@
-[**中文说明**](./README.md) | [**English**](./README_EN.md)
+[**中文说明**](./readme.md) | [**English**](./readme_en.md)
 
 <p align="center">
     <img src="./pics/banner.svg" width="500"/>
