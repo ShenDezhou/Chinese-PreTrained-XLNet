@@ -93,7 +93,7 @@ chinese_xlnet_tiny_L-6_H-768_A-12.zip
 
 
 ### 快速加载
-依托于[Huggingface-Transformers 3.1.0](https://github.com/huggingface/transformers)，可轻松调用以上模型。
+依托于[Huggingface-Transformers 3.1.0](https://github.com/huggingface/transformers) ，可轻松调用以上模型。
 ```
 tokenizer = AutoTokenizer.from_pretrained("MODEL_NAME")
 model = AutoModel.from_pretrained("MODEL_NAME")
@@ -126,15 +126,15 @@ model = AutoModel.from_pretrained("MODEL_NAME")
 | **XLNet-tiny** | 0.9880 / 0.9863 |  **0.9679**  /    **0.96184** |
 | **XLNet-base**<sup>[2]</sup> | 0.9988 /	0.99853 |	**0.9825** /	**0.97877**|
 
-> [1] BERT-wwm-ext：是崔一鸣等人提出的[BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)。  
-> [2] XLNet-base：是崔一鸣（哈工大讯飞联合实验室）等人提出的[XLNet](https://github.com/ymcui/Chinese-XLNet)。
+> [1] BERT-wwm-ext：是崔一鸣等人提出的[BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm) 。  
+> [2] XLNet-base：是崔一鸣（哈工大讯飞联合实验室）等人提出的[XLNet](https://github.com/ymcui/Chinese-XLNet) 。
 
 
 ## 预训练细节
 以下以`XLNet-tiny`模型为例，对预训练细节进行说明。
 
 ### 生成词表
-按照XLNet官方教程步骤，首先需要使用[Sentence Piece](https://github.com/google/sentencepiece)生成词表。
+按照XLNet官方教程步骤，首先需要使用[Sentence Piece](https://github.com/google/sentencepiece) 生成词表。
 在本项目中，我们使用的词表大小为21128，其余参数采用官方示例中的默认配置。
 
 ```
@@ -201,7 +201,7 @@ SentencePieceTrainer.train(
 
 ## 下游任务微调细节
 下游任务微调使用的设备是谷歌Cloud GPU（16G HBM），以下简要说明各任务精调时的配置。
-**相关代码请查看[EXLNet](https://github.com/ShenDezhou/EXLNet)项目。**
+**相关代码请查看[EXLNet](https://github.com/ShenDezhou/EXLNet) 项目。**
 
 
 ## FAQ
@@ -220,12 +220,12 @@ A: `XLNet-tiny`使用了Cloud TPU v3 (128G HBM)训练了30K steps（batch=32）�
 **Q: 为什么XLNet官方没有发布Multilingual或者Chinese XLNet？**  
 A: 
 （以下是个人看法）不得而知，很多人留言表示希望有，戳[XLNet-issue-#3](https://github.com/zihangdai/xlnet/issues/3)。
-以XLNet官方的技术和算力来说，训练一个这样的模型并非难事（multilingual版可能比较复杂，需要考虑各语种之间的平衡，也可以参考[multilingual-bert](https://github.com/google-research/bert/blob/master/multilingual.md)中的描述。）。 
+以XLNet官方的技术和算力来说，训练一个这样的模型并非难事（multilingual版可能比较复杂，需要考虑各语种之间的平衡，也可以参考[multilingual-bert](https://github.com/google-research/bert/blob/master/multilingual.md) 中的描述。
 **不过反过来想一下，作者们也并没有义务一定要这么做。** 
 作为学者来说，他们的technical contribution已经足够，不发布出来也不应受到指责，呼吁大家理性对待别人的工作。
 
 **Q: XLNet多数情况下比BERT要好吗？**  
-A: 目前看来至少上述几个任务效果都还不错，虽然使用的数据和发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)是不一样的。
+A: 目前看来至少上述几个任务效果都还不错，虽然使用的数据和发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm) 是不一样的。
 
 **Q: ？**  
 A: 。
@@ -235,7 +235,7 @@ A: 。
 如果本目录中的内容对你的研究工作有所帮助，欢迎在论文中引用下述技术报告：
 https://arxiv.org/abs/
 ```
-
+TBD
 ```
 
 
@@ -247,7 +247,7 @@ https://arxiv.org/abs/
 
 
 ## 免责声明
-本项目并非[XLNet官方](https://github.com/zihangdai/xlnet)发布的Chinese XLNet模型。
+本项目并非[XLNet官方](https://github.com/zihangdai/xlnet) 发布的Chinese XLNet模型。
 该项目中的内容仅供技术研究参考，不作为任何结论性依据。
 使用者可以在许可证范围内任意使用该模型，但我们不对因使用该项目内容造成的直接或间接损失负责。
 

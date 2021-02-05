@@ -52,9 +52,9 @@ See more published resources：https://github.com/
 
 > [1] The general data includes: question and answer data, the total size is 1.74gb, the number of records is 720000, and the number of words is 9.83 million.
 
-### PyTorch/Tensorflow版本
+### PyTorch/Tensorflow Versions
 
-Pytorch version, TF1 and inf version are provided.
+Pytorch version, TF1 and TF2 version are provided.
 
 ### instructions
 
@@ -70,7 +70,7 @@ tf_chinese_xlnet_tiny_L-6_H-768_A-12.zip
     |- spiece.model          # 分词模型
 ```
 
-TensorFlow2版本为：
+TensorFlow2 version：
 
 ```
 tf2_chinese_xlnet_tiny_L-6_H-768_A-12.zip
@@ -80,7 +80,7 @@ tf2_chinese_xlnet_tiny_L-6_H-768_A-12.zip
     |- spiece.model          # 分词模型
 ```
 
-Pytorch版本为：
+Pytorch version：
 
 ```
 chinese_xlnet_tiny_L-6_H-768_A-12.zip
@@ -241,7 +241,7 @@ A:
 
 (the following is my personal opinion) I don't know. Many people leave a message saying they hope to have it(https://github.com/zihangdai/xlnet/issues/3)。
 
-In terms of the official technology and computing power of xlnet, it is not difficult to train such a model (the multilingual version may be more complex, and the balance between different languages needs to be considered. Please also refer to [multilingual Bert](https://github.com/google-research/bert/blob/master/multilingual.md)It is described in.
+In terms of the official technology and computing power of xlnet, it is not difficult to train such a model (the multilingual version may be more complex, and the balance between different languages needs to be considered. Please also refer to [multilingual Bert](https://github.com/google-research/bert/blob/master/multilingual.md) It is described in.
 
 **On the other hand, the authors have no obligation to do so. **
 
@@ -251,18 +251,15 @@ As scholars, their technical contributions are enough and should not be publishe
 
 **Q: Is xlnet better than Bert in most cases? **
 
-A: At present, it seems that at least the effects of the above tasks are not bad, although the data used and the published [bert WwM ext](https://github.com/ymcui/Chinese-BERT-wwm)It's different.
+A: At present, it seems that at least the effects of the above tasks are not bad, although the data used, and the published [bert WwM ext](https://github.com/ymcui/Chinese-BERT-wwm) It's different.
 
 
-
-**Q: ？ **
-
-A: 。
 
 ## Citation
 If the contents in this catalogue are helpful to your research work, you are welcome to quote the following technical reports in the paper:
 https://arxiv.org/abs/
 ```
+TBD
 ```
 
 
@@ -272,7 +269,7 @@ During the construction of the project, the following warehouses have been refer
 - XLNet:  https://github.com/zihangdai/xlnet
 
 ## Disclaimer
-This project is not [xlnet official](https://github.com/zihangdai/xlnet)Published Chinese xlnet model.
+This project is not [xlnet official](https://github.com/zihangdai/xlnet) Published Chinese xlnet model.
 The content of the project is only for technical research reference, not as any conclusive basis.
 Users can use the model freely within the scope of the license, but we are not responsible for the direct or indirect losses caused by using the content of the project.
 
