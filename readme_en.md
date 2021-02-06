@@ -20,7 +20,7 @@ Other related resources：
 See more published resources：https://github.com/ 
 
 ## NEWS
-**2021/2/4 All models support python, tensorflow1 and tensorflow2. Please call or download them through the transformers library. https://huggingface.co/**
+**2021/2/4 All models support pytorch, tensorflow1 and tensorflow2. Please call or download them through the transformers library. https://huggingface.co/**
 
 
 <details>
