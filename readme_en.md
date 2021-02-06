@@ -48,7 +48,7 @@ See more published resources：https://github.com/
 
 | Model abbreviation | corpus | Google download | Baidu cloud Download|
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-tiny, Chinese`** | **Chinese Q &amp; A / <br/> General Data<sup>[1]</sup>** | **[TensorFlow1](https://drive.google.com/drive/folders/1-4ZFSuVvgAEazcqnCwELQhBEKOszUTvn?usp=sharing)** <br/>**[TensorFlow2](https://drive.google.com/drive/folders/1-hzDQ9fKkhwqCFEH1TVMXEj_VN4mG_2b?usp=sharing)** <br/>**[PyTorch](https://drive.google.com/drive/folders/1-3RteqvOeyE3qvmRADq2P7ifYNHsO7Kt?usp=sharing)** | **[TensorFlow1,密码:tfxl](https://pan.baidu.com/s/1sUKsad2ZS6xQkUdxrj0qfw)** <br/>**[TensorFlow2,密码:tfxl](https://pan.baidu.com/s/1jzCUpx4VLYA8tbL_JIRllw)** <br/>**[PyTorch,密码:toxl](https://pan.baidu.com/s/1bdNtnz1Lts-24zhBtoxIRQ)** |
+| **`XLNet-tiny, Chinese`** | **Chinese Q &amp; A / <br/> General Data<sup>[1]</sup>** | **[TensorFlow1](https://drive.google.com/drive/folders/1-4ZFSuVvgAEazcqnCwELQhBEKOszUTvn?usp=sharing)** <br/>**[TensorFlow2](https://drive.google.com/drive/folders/1-hzDQ9fKkhwqCFEH1TVMXEj_VN4mG_2b?usp=sharing)** <br/>**[PyTorch](https://drive.google.com/drive/folders/1-3RteqvOeyE3qvmRADq2P7ifYNHsO7Kt?usp=sharing)** | **[TensorFlow1,密码:tfxl](https://pan.baidu.com/s/1sUKsad2ZS6xQkUdxrj0qfw)** <br/>**[TensorFlow2,密码:tfxl](https://pan.baidu.com/s/1kWDgTEuF-E8MhZ6V-3xczw)** <br/>**[PyTorch,密码:toxl](https://pan.baidu.com/s/1bdNtnz1Lts-24zhBtoxIRQ)** |
 
 > [1] The general data includes: question and answer data, the total size is 1.74gb, the number of records is 720000, and the number of words is 9.83 million.
 
