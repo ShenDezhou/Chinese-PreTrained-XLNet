@@ -51,6 +51,7 @@
 | **`XLNet-tiny, Chinese`** | **中文问答/<br/>通用数据<sup>[1]</sup>** | **[TensorFlow1](https://drive.google.com/drive/folders/1-4ZFSuVvgAEazcqnCwELQhBEKOszUTvn?usp=sharing)** <br/>**[TensorFlow2](https://drive.google.com/drive/folders/1-hzDQ9fKkhwqCFEH1TVMXEj_VN4mG_2b?usp=sharing)** <br/>**[PyTorch](https://drive.google.com/drive/folders/1-3RteqvOeyE3qvmRADq2P7ifYNHsO7Kt?usp=sharing)** | **[TensorFlow1,密码:tfxl](https://pan.baidu.com/s/1sUKsad2ZS6xQkUdxrj0qfw)** <br/>**[TensorFlow2,密码:tfxl](https://pan.baidu.com/s/1kWDgTEuF-E8MhZ6V-3xczw)** <br/>**[PyTorch,密码:toxl](https://pan.baidu.com/s/1bdNtnz1Lts-24zhBtoxIRQ)** |
 
 > [1] 通用数据包括：问答等数据，总大小1.74GB，记录数72万，字数983万。
+> [2] 加载pytorch和tf2模型时，如transformers加载报xla错误，请自行修改config.json中`xla_device`的值，如在gpu上微调需要设为false，如在tpu上微调，则需要设为true。
 
 ### PyTorch/Tensorflow版本
 

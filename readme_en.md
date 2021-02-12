@@ -51,6 +51,7 @@ See more published resources：https://github.com/
 | **`XLNet-tiny, Chinese`** | **Chinese Q &amp; A / <br/> General Data<sup>[1]</sup>** | **[TensorFlow1](https://drive.google.com/drive/folders/1-4ZFSuVvgAEazcqnCwELQhBEKOszUTvn?usp=sharing)** <br/>**[TensorFlow2](https://drive.google.com/drive/folders/1-hzDQ9fKkhwqCFEH1TVMXEj_VN4mG_2b?usp=sharing)** <br/>**[PyTorch](https://drive.google.com/drive/folders/1-3RteqvOeyE3qvmRADq2P7ifYNHsO7Kt?usp=sharing)** | **[TensorFlow1,密码:tfxl](https://pan.baidu.com/s/1sUKsad2ZS6xQkUdxrj0qfw)** <br/>**[TensorFlow2,密码:tfxl](https://pan.baidu.com/s/1kWDgTEuF-E8MhZ6V-3xczw)** <br/>**[PyTorch,密码:toxl](https://pan.baidu.com/s/1bdNtnz1Lts-24zhBtoxIRQ)** |
 
 > [1] The general data includes: question and answer data, the total size is 1.74gb, the number of records is 720000, and the number of words is 9.83 million.
+> [2] to load the pytorch and tf2 models, such as the transformers load report xla error, modify the value of `xla_device` in config.json yourself, such as fine-tuning on the gpu needs to be set to false, if fine-tuning on tpu, you need to set to true.
 
 ### PyTorch/Tensorflow Versions
 
