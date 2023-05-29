@@ -108,8 +108,8 @@ For details, see Thomas Emerson. 2005. The second international Chinese word seg
 According to the given sentence, the model needs to give an appropriate partition, so that the words with joint meaning are combined together.
 The evaluation index is ACC / F1
 
-| Model                        | development set ACC / F1 | validation ACC / F1 | test set |
-|:-----------------------------| :---------: | :---------: | :---------: |
+| Model                        | development set ACC / F1 | validation ACC / F1 |
+|:-----------------------------| :---------: | :---------: | 
 | LSTM                         | 0.9526 /	0.94500|	0.940177 /	0.92627 |
 | BERT-wwm-ext<sup>[1]</sup>   | 0.96106 /	0.95476|	0.95565 /	0.9465  |
 | **XLNet-tiny**               | 0.9880 / 0.9863 |  **0.9679**  /    **0.96184** |
