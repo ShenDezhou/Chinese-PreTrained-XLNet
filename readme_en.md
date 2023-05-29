@@ -47,9 +47,9 @@ Other related resources：
 > [1] The general data includes: question and answer data, the total size is 1.74gb, the number of records is 720000, and the number of words is 9.83 million.
 > [2] to load the pytorch and tf2 models, such as the transformers load report xla error, modify the value of `xla_device` in config.json yourself, such as fine-tuning on the gpu needs to be set to false, if fine-tuning on tpu, you need to set to true.
 
-[XLNet_6L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/bert/cn/pretrain/pt/XLNet_6L_cn.tgz
-[XLNet_12L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/bert/cn/pretrain/pt/XLNet_12L_cn.tgz
-[XLNet_24L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/bert/cn/pretrain/pt/XLNet_24L_cn.tgz
+[XLNet_6L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/XLNet_6L_cn.tgz
+[XLNet_12L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/XLNet_12L_cn.tgz
+[XLNet_24L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/XLNet_24L_cn.tgz
 
 ### PyTorch/Tensorflow Versions
 

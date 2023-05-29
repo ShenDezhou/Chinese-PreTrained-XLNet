@@ -47,9 +47,9 @@
 > [1] 通用数据包括：问答等数据，总大小1.74GB，记录数72万，字数983万。
 > [2] 加载pytorch和tf2模型时，如transformers加载报xla错误，请自行修改config.json中`xla_device`的值，如在gpu上微调需要设为false，如在tpu上微调，则需要设为true。
 
-[xlnet_6L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/bert/cn/pretrain/pt/xlnet_6L_cn.tgz
-[xlnet_12L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/bert/cn/pretrain/pt/xlnet_12L_cn.tgz
-[xlnet_24L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/bert/cn/pretrain/pt/xlnet_24L_cn.tgz
+[xlnet_6L_cn]:  https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/xlnet_6L_cn.tgz
+[xlnet_12L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/xlnet_12L_cn.tgz
+[xlnet_24L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/xlnet_24L_cn.tgz
 
 ### PyTorch/Tensorflow版本
 
