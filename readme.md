@@ -3,11 +3,6 @@
 <p align="center">
     <img src="./pics/banner.svg" width="500"/>
 </p>
-<p align="center">
-    <a href="https://github.com/shendezhou/Chinese-PreTrained-XLNet/blob/master/LICENSE">
-        <img alt="LICENCE" src="" />
-    </a>
-</p>
 
 本项目提供了面向中文的XLNet预训练模型，旨在丰富中文自然语言处理资源，提供多元化的中文预训练模型选择。
 我们欢迎各位专家学者下载使用，并共同促进和发展中文资源建设。
@@ -17,14 +12,13 @@
 其他相关资源：
 - 中文XLNet预训练模型：https://github.com/ymcui/Chinese-XLNet
 
-查看更多发布的资源：https://github.com/ 
-
 ## 新闻
-**2021/2/4 所有模型已支持Pytorch和Tensorflow1以及Tensorflow2，请通过transformers库进行调用或下载。https://huggingface.co/**
-
+**2023/5/29 更新XLNet-Mini/Base/Large下载链接**
 
 <details>
 <summary>历史新闻</summary>
+2021/2/4 所有模型已支持Pytorch和Tensorflow1以及Tensorflow2，请通过transformers库进行调用或下载。
+
 2021/2/4 本目录发布的模型未来可接入[Huggingface-Transformers](https://github.com/huggingface/transformers)，查看[快速加载](#快速加载)
 
 2021/2/4 `XLNet-tiny`已可下载，查看[模型下载](#模型下载)
@@ -43,15 +37,19 @@
 | [引用](#引用) | 本目录的技术报告 |
 
 ## 模型下载
-* **`XLNet-tiny`**：6-layer, 768-hidden, 12-heads, 72M parameters(71766926)
 
-
-| 模型简称 | 语料 | Google下载 | 百度云下载 |
-| :------- | :--------- | :---------: | :---------: |
-| **`XLNet-tiny, Chinese`** | **中文问答/<br/>通用数据<sup>[1]</sup>** | **[TensorFlow1](https://drive.google.com/drive/folders/1-4ZFSuVvgAEazcqnCwELQhBEKOszUTvn?usp=sharing)** <br/>**[TensorFlow2](https://drive.google.com/drive/folders/1-hzDQ9fKkhwqCFEH1TVMXEj_VN4mG_2b?usp=sharing)** <br/>**[PyTorch](https://drive.google.com/drive/folders/1-3RteqvOeyE3qvmRADq2P7ifYNHsO7Kt?usp=sharing)** | **[TensorFlow1,密码:tfxl](https://pan.baidu.com/s/1sUKsad2ZS6xQkUdxrj0qfw)** <br/>**[TensorFlow2,密码:tfxl](https://pan.baidu.com/s/1kWDgTEuF-E8MhZ6V-3xczw)** <br/>**[PyTorch,密码:toxl](https://pan.baidu.com/s/1bdNtnz1Lts-24zhBtoxIRQ)** |
+| 数据集               | owner      | model            | 语言     | 层数 | hidden | head | 参数量             |
+|-------------------|------------|------------------|--------|----|--------|------|-----------------|
+| QA                | Brian Shen | [xlnet_6L_cn]    | cn     | 6  |        |      | 53.5M           |
+| 中文维基百科，其他百科、新闻、问答 | Brian Shen | [xlnet_12L_cn]   | cn     | 12 |        |      | 117M            |
+| 中文维基百科，其他百科、新闻、问答 | Brian Shen | [xlnet_24L_cn]   | cn     | 24 |        |      | 209M            |
 
 > [1] 通用数据包括：问答等数据，总大小1.74GB，记录数72万，字数983万。
 > [2] 加载pytorch和tf2模型时，如transformers加载报xla错误，请自行修改config.json中`xla_device`的值，如在gpu上微调需要设为false，如在tpu上微调，则需要设为true。
+
+[xlnet_6L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/bert/cn/pretrain/pt/xlnet_6L_cn.tgz
+[xlnet_12L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/bert/cn/pretrain/pt/xlnet_12L_cn.tgz
+[xlnet_24L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/bert/cn/pretrain/pt/xlnet_24L_cn.tgz
 
 ### PyTorch/Tensorflow版本
 
@@ -59,7 +57,7 @@
 
 ### 使用说明
 
-中国大陆境内建议使用百度云下载点，境外用户建议使用谷歌下载点，`XLNet-tiny`模型文件大小约**343M**。 以TensorFlow版`XLNet-tiny, Chinese`为例，下载完毕后对zip文件进行解压得到：
+`XLNet-tiny`模型文件大小约**343M**。 以TensorFlow版`XLNet-tiny, Chinese`为例，下载完毕后对zip文件进行解压得到：
 
 ```
 tf_chinese_xlnet_tiny_L-6_H-768_A-12.zip
@@ -99,14 +97,6 @@ chinese_xlnet_tiny_L-6_H-768_A-12.zip
 tokenizer = AutoTokenizer.from_pretrained("MODEL_NAME")
 model = AutoModel.from_pretrained("MODEL_NAME")
 ```
-其中`MODEL_NAME`对应列表如下：  
-
-| 模型名 | MODEL_NAME |
-| - | - |
-| XLNet-tiny-Chinese | /chinese-xlnet-tiny<sup>[1]</sup>|
-
-> [1] 待上传,暂时需要手动下载。
-
 
 
 ## 基线系统效果
@@ -228,20 +218,16 @@ A:
 **Q: XLNet多数情况下比BERT要好吗？**  
 A: 目前看来至少上述几个任务效果都还不错，虽然使用的数据和发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm) 是不一样的。
 
-**Q: ？**  
-A: 。
 
 
 ## 引用
 如果本目录中的内容对你的研究工作有所帮助，欢迎在论文中引用下述技术报告：
-https://arxiv.org/abs/
-```
-TBD
-```
+
 
 
 ## 致谢
-项目作者： tsinghuaboy
+项目作者： Brian Shen.  
+Twitter @dezhou.
 
 建设该项目过程中参考了如下仓库，在这里表示感谢：
 - XLNet: https://github.com/zihangdai/xlnet
