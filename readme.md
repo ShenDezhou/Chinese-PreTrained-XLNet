@@ -13,7 +13,7 @@
 - 中文XLNet预训练模型：https://github.com/ymcui/Chinese-XLNet
 
 ## 新闻
-**2023/5/29 更新XLNet-Mini/Base/Large下载链接**
+**2023/5/29 更新XLNet-Base/Large下载链接**
 
 <details>
 <summary>历史新闻</summary>
@@ -38,18 +38,16 @@
 
 ## 模型下载
 
-| 数据集               | owner      | model            | 语言     | 层数 | hidden | head | 参数量             |
-|-------------------|------------|------------------|--------|----|--------|------|-----------------|
-| QA                | Brian Shen | [xlnet_6L_cn]    | cn     | 6  |        |      | 53.5M           |
-| 中文维基百科，其他百科、新闻、问答 | Brian Shen | [xlnet_12L_cn]   | cn     | 12 |        |      | 117M            |
-| 中文维基百科，其他百科、新闻、问答 | Brian Shen | [xlnet_24L_cn]   | cn     | 24 |        |      | 209M            |
+| 数据集               | owner      | model            | 语言     | 层数 | hidden | head | 参数量    |
+|-------------------|------------|------------------|--------|----|--------|------|--------|
+| 中文维基百科，其他百科、新闻、问答 | Brian Shen | [xlnet_12L_cn]   | cn     | 12 | 768    | 12   | 116.7M |
+| 中文维基百科，其他百科、新闻、问答 | Brian Shen | [xlnet_24L_cn]   | cn     | 24 | 768    | 12   | 208.9M |
 
 > [1] 通用数据包括：问答等数据，总大小1.74GB，记录数72万，字数983万。
 > [2] 加载pytorch和tf2模型时，如transformers加载报xla错误，请自行修改config.json中`xla_device`的值，如在gpu上微调需要设为false，如在tpu上微调，则需要设为true。
 
-[xlnet_6L_cn]:  https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/xlnet_6L_cn.tgz
-[xlnet_12L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/xlnet_12L_cn.tgz
-[xlnet_24L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/xlnet_24L_cn.tgz
+[xlnet_12L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/xlnet-L-12_H-768_A-12_cn.zip
+[xlnet_24L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/xlnet-L-24_H-768_A-12_cn.zip
 
 ### PyTorch/Tensorflow版本
 
