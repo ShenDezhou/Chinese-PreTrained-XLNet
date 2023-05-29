@@ -38,14 +38,16 @@ Other related resources：
 
 ## Model Download
 
-| dataset                                                             | owner      | model                                                     | language | layers | hidden | head | Parameter amount |
-|---------------------------------------------------------------------|------------|-----------------------------------------------------------|------|--------|--------|------|------------------|
-| Chinese Wikipedia, other encyclopedias, news, questions and answers | Brian Shen | [XLNet_12L_cn]                                            | cn   | 12     |        |      | 117M             |
-| Chinese Wikipedia, other encyclopedias, news, questions and answers | Brian Shen | [XLNet_24L_cn]                                            | cn   | 24     |        |      | 209M             |
+| dataset                                                             | owner      | model           | language | layers | hidden | head | Parameter amount |
+|---------------------------------------------------------------------|------------|-----------------|------|--------|--------|------|------------------|
+| Chinese Wikipedia, other encyclopedias, news, questions and answers  | Brian Shen | [xlnet_6L_cn]   | cn     | 12 | 768    | 12   | M      |
+| Chinese Wikipedia, other encyclopedias, news, questions and answers | Brian Shen | [XLNet_12L_cn]  | cn   | 12     |        |      | 117M             |
+| Chinese Wikipedia, other encyclopedias, news, questions and answers | Brian Shen | [XLNet_24L_cn]  | cn   | 24     |        |      | 209M             |
 
 > [1] The general data includes: question and answer data, the total size is 1.74gb, the number of records is 720000, and the number of words is 9.83 million.
 > [2] to load the pytorch and tf2 models, such as the transformers load report xla error, modify the value of `xla_device` in config.json yourself, such as fine-tuning on the gpu needs to be set to false, if fine-tuning on tpu, you need to set to true.
 
+[xlnet_6L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/xlnet_6L_cn.tgz
 [XLNet_12L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/XLNet_12L_cn.tgz
 [XLNet_24L_cn]: https://transformers-models.obs.cn-north-4.myhuaweicloud.com/xlnet/cn/pretrain/pt/XLNet_24L_cn.tgz
 
