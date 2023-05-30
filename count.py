@@ -1,6 +1,6 @@
 import sys
-from pytorch_transformers import XLNetModel
-
+# from pytorch_transformers import XLNetModel
+from transformers import XLNetModel
 from prettytable import PrettyTable
 
 def count_parameters(model):
